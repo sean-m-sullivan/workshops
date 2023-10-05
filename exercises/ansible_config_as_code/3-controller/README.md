@@ -477,10 +477,10 @@ git push origin master
 
 Run controller_config playbook.
 
-**Replace ####** with the correct shortname for the workshop.
+**Replace rh####** with the correct shortname for the workshop.
 
 ```console
-ansible-navigator run playbooks/controller_config.yml --eei hub-student#.####.example.opentlc.com/config_as_code -i inventory.yml -l automationcontroller --pa='--tls-verify=false' -m stdout
+ansible-navigator run playbooks/controller_config.yml --eei hub-student#.rh####.example.opentlc.com/config_as_code -i inventory.yml -l automationcontroller --pa='--tls-verify=false' -m stdout
 ```
 
 [previous task](../2-pah/README.md)
