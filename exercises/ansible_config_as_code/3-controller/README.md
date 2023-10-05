@@ -33,7 +33,7 @@ controller_execution_environments:
 ![execution_environments supported](images/ee_supportedv3.png)
 ![execution_environments minimal](images/ee_minimalv2.png)
 ![execution_environments 2.9](images/ee_29v2.png)
-![execution_environments 2.9](images/ee_config_as_code.png)
+![execution_environments conifg as code](images/ee_config_as_code.png)
 
 Further documentation for those who are interested to learn more see:
 
@@ -477,10 +477,10 @@ git push origin master
 
 Run controller_config playbook.
 
-**Replace rh####** with the correct shortname for the workshop.
+**Replace ####** with the correct shortname for the workshop.
 
 ```console
-ansible-navigator run playbooks/controller_config.yml --eei hub-student#.rh####.example.opentlc.com/config_as_code -i inventory.yml -l automationcontroller --pa='--tls-verify=false' -m stdout
+ansible-navigator run playbooks/controller_config.yml --eei hub-student#.####.example.opentlc.com/config_as_code -i inventory.yml -l automationcontroller --pa='--tls-verify=false' -m stdout
 ```
 
 [previous task](../2-pah/README.md)
